@@ -18,13 +18,21 @@
   text-decoration: none;
 }
 
+body {
+  min-height: 100%;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  background-color: var(--main-background);
+  font: size 1.5rem;
+  padding: 2rem;
+  position: relative;
+}
+
 .container {
   position: relative;
   width: 1440px;
   margin: 0;
   color: var(--font-color-paragraph);
-  flex-direction: row;
-  flex-basis: 50%;
 }
 .container .box {
   width: clamp(375px, 50%, 1440px);
@@ -37,15 +45,6 @@
   position: relative;
 }
 
-body {
-  min-height: 100%;
-  font-family: "inter", sans-serif;
-  font-weight: 400;
-  background-color: var(--main-background);
-  font: size 1.5rem;
-  padding: 2rem;
-  position: relative;
-}
 h1 {
   color: var(--white);
   font-family: "Inter", sans-serif;
@@ -86,7 +85,6 @@ p {
 .stats_info {
   color: var(--stats-header-color);
   font-family: "stat-number-font", Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
   font-size: 10px;
   margin: 0 auto;
 }
