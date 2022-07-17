@@ -12,59 +12,62 @@
   box-sizing: border-box;
   margin: 0;
   padding:0;
-  text-align:center;
 }
 
 body {
   min-height:100vh;
   background-color: var(--main-background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin:0;
   color: var(--paragraph);
 }
 
-.container {
-  width: clamp(315px, 80%, 1440px);
-  min-height:100vh;
-  display:flex;
-  justify-content: center;
-  border:2px solid red;
+.hero {
   border-radius: 15px;
-
+  padding:4rem;
 }
 
-.img_div {
-  width:clamp(20rem, 70%, 25rem);
-  height:17rem;
+.container {
+  margin:0 auto;
+  width: 80%;
+  max-width:55rem;
+  
+}
+
+.row {
   display:flex;
-  order:1;
+  flex-direction:column;
+}
+
+.img-section {
+  width:100%;
   background: var(--violet);
   border-radius: 15px 15px 0px 0px;
 }
 
-.img_div img {
-  width: 100%;
-  height:100%;
+.img-section picture > * {
+  max-width: 100%;
   opacity: 0.7;
   border-radius: 15px 15px 0px 0px;
 
 }
 
 .card {
-  width:clamp(20rem, 70%, 25rem);
-  padding: 2rem;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+  width:100%;
+  /* padding: 2rem; */
   gap:10px;
   border-radius: 0px 0px 15px 15px;
   background-color: var(--card-background);
   font-size: 1.5em;
 }
 
+.row {
+  display:flex;
+  flex-direction: column;
+}
+
 h2 {
-  margin: 2rem;
+  margin: 1rem 0 0 .5rem;
+  padding:2rem;
   font-family: "Inter", sans-serif;
   font-weight:700;
   color: var(--white);
@@ -75,14 +78,15 @@ span {
 }
 
 p {
+  padding:2em;
   color: var(--paragraph);
   opacity:0.7;
 }
+
 .stats {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 80%;
+  flex-direction: column;
+  align-items:center;
   color: var(--white);
 }
 .stats_header {
@@ -98,19 +102,38 @@ p {
   margin-bottom:1rem;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (min-width:750px) {
+  
   .container {
-    flex-direction: column;
+    width:fit-content;
+    justify-content:center;
+  }
+  
+  .row {
+    flex-direction: row;
     align-items: center;
   }
-  .img_div {
-    order:0;
+
+  .img-section {
+    order:2;
+    width:100%;
+    height:40rem;
+    border-radius:0px;
+  }
+  
+  .img-section picture img{
+    max-width:100%;
+    height:40rem;
+
   }
   .card{
-    padding:1.5rem;
-    order:0;
+    order:1;
+    max-width:100%;
+    border-radius:0px;
+
   }
   .stats {
-    flex-direction:column;
+    flex-direction:row;
+    width:fit-content;
   }
 }

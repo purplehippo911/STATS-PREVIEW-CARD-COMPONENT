@@ -18,50 +18,63 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
       rel="stylesheet"
     />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    
-    <title>Frontend Mentor | Stats preview card component</title>     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    <div class="container">
-      <div class="img_div">
-        <img src="/images/image-header-mobile.jpg" alt="people working" >
-      </div>
-      <div class="card"> 
-        <div class="main">
-          <h2>
-            Get
-            <span class="span">insights</span> that
-            help
-            your business grow.
-          </h2>
-          <p class="main__paragraph">
-            Discover the benefits of data analytics and make 
-            <br>
-            better decisions regarding revenue, customer 
-            <br>
-            experience, and overall efficiency.
-          </p>
-        </div>
+    <div class="hero">
+      <div class="container row">
+        <section class="img-section">
+          <picture>
+            <source
+              class="desktop"
+              media="(min-width: 700px)"
+              srcset="images/image-header-desktop.jpg"
+            />
+            <source
+              class="mobile"
+              media="(max-width: 680px)"
+              srcset="images/image-header-mobile.jpg"
+            />
+            <img src="images/image-header-mobile.jpg" alt="people working" />
+          </picture>
+        </section>
+        <section class="card">
+          <div class="main">
+            <h2>
+              Get
+              <span class="span">insights</span> that help your business grow.
+            </h2>
+            <p class="main__paragraph">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
           <div class="stats">
-            <section class="stats stats1">
+            <section class="stats_section">
               <h2 class="stats_header">10k+</h2>
               <p class="stats_info">COMPANIES</p>
             </section>
-            <section class="stats stats2">
+            <section class="stats_section">
               <h2 class="stats_header">314</h2>
               <p class="stats_info">TEMPLATES</p>
             </section>
-            <section class="stats stats3">
+            <section class="stats_section">
               <h2 class="stats_header">12M+</h2>
               <p class="stats_info">QUERIES</p>
-              </section>
-       </div> 
-     </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
