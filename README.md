@@ -30,12 +30,12 @@ Users should be able to:
 
 🖥 Desktop:
 
-![desktop](/images/desktop.png)
+![](/images/desktop.png)
 
 
 📱 Mobile:
 
-![mobile](/images/mobile.png)
+![](/images/mobile.png)
 
 
 ### Links
