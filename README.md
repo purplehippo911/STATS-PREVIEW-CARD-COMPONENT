@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-with-html-and-css-Y_0wTbyR4)
 - Live Site URL: [My live site](https://purplehippo911.github.io/StatsPreview/)
 
 ## My process
