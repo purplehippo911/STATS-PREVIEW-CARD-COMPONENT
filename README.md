@@ -30,16 +30,11 @@ Users should be able to:
 
 🖥 Desktop:
 
-<<<<<<< HEAD
 ![desktop](/images/desktop.png)
-=======
-[desktop](/images/desktop.png)
->>>>>>> 3cb9f87256c26528b8405022f058a0c530d463b3
-
 
 📱 Mobile:
 
-[mobile](/images/mobile.png)
+![mobile](/images/mobile.png)
 
 
 ### Links
